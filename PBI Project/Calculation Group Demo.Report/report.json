@@ -1,0 +1,78 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"04f7ada4a457625ff226\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.1044776119403,\"y\":118.2089552238806,\"z\":2000,\"width\":277.6119402985075,\"height\":157.61194029850745,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.SaelsMeasure\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SaelsMeasure\"},\"Name\":\"Sales.SaelsMeasure\",\"NativeReferenceName\":\"SaelsMeasure\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SaelsMeasure\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filter3a597be3aa43902ead82\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calculation group\"}},\"Property\":\"Calculation group column\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculation group\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Calculation group column\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'LM'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 157.61,
+          "width": 277.61,
+          "x": 479.10,
+          "y": 118.21,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"1575936665a9243efa9b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.164179104477612,\"y\":197.01492537313433,\"z\":1000,\"width\":196.11940298507463,\"height\":276.7164179104478,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DateTable.Yıl\",\"active\":true},{\"queryRef\":\"DateTable.Ay\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DateTable\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Yıl\"},\"Name\":\"DateTable.Yıl\",\"NativeReferenceName\":\"Yıl\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Ay\"},\"Name\":\"DateTable.Ay\",\"NativeReferenceName\":\"Ay\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"DateTable.Yıl\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DateTable\"}},\"Property\":\"Yıl\"}}],\"isPinned\":true},{\"queryRefs\":[\"DateTable.Ay\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"2023L\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2023-07-18T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DateTable\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Yıl\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Ay\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}},{\"Literal\":{\"Value\":\"'Ağustos'\"}}]]}}}]}}}}]},\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DateTable\"}},\"Property\":\"Yıl\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DateTable\"}},\"Property\":\"Ay\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DateTable\"}},\"Property\":\"Yıl\"}},\"Right\":{\"Literal\":{\"Value\":\"2023L\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DateTable\"}},\"Property\":\"Ay\"}},\"Right\":{\"Literal\":{\"Value\":\"'Ağustos'\"}}}}}],\"valueMap\":{\"0\":\"2023\",\"1\":\"Ağustos\"}}]}}}",
+          "filters": "[]",
+          "height": 276.72,
+          "width": 196.12,
+          "x": 7.16,
+          "y": 197.01,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"361237d8fca04acd0f10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":786.2686567164179,\"y\":118.2089552238806,\"z\":3000,\"width\":277.6119402985075,\"height\":157.61194029850745,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.SaelsMeasure\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SaelsMeasure\"},\"Name\":\"Sales.SaelsMeasure\",\"NativeReferenceName\":\"SaelsMeasure\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SaelsMeasure\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filter3a597be3aa43902ead82\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calculation group\"}},\"Property\":\"Calculation group column\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculation group\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Calculation group column\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'LM_%'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 157.61,
+          "width": 277.61,
+          "x": 786.27,
+          "y": 118.21,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7f52813647db8d7ef846\",\"layouts\":[{\"id\":0,\"position\":{\"x\":192.53731343283582,\"y\":118.2089552238806,\"z\":0,\"width\":277.6119402985075,\"height\":157.61194029850745,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.SaelsMeasure\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SaelsMeasure\"},\"Name\":\"Sales.SaelsMeasure\",\"NativeReferenceName\":\"SaelsMeasure\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SaelsMeasure\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 157.61,
+          "width": 277.61,
+          "x": 192.54,
+          "y": 118.21,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c24b69daa3a5339b1d97\",\"layouts\":[{\"id\":0,\"position\":{\"x\":331.34328358208955,\"y\":308.05970149253733,\"z\":3001,\"width\":663.5820895522388,\"height\":241.7910447761194,\"tabOrder\":3001}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Sales.Kategori\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sales.SaelsMeasure\"}],\"Columns\":[{\"queryRef\":\"Calculation group.Calculation group column\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculation group\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Kategori\"},\"Name\":\"Sales.Kategori\",\"NativeReferenceName\":\"Kategori\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SaelsMeasure\"},\"Name\":\"Sales.SaelsMeasure\",\"NativeReferenceName\":\"SaelsMeasure\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Calculation group column\"},\"Name\":\"Calculation group.Calculation group column\",\"NativeReferenceName\":\"Calculation group column\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"Filter45a1a2e741b485c192b2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calculation group\"}},\"Property\":\"Calculation group column\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculation group\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Calculation group column\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'LD'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 241.79,
+          "width": 663.58,
+          "x": 331.34,
+          "y": 308.06,
+          "z": 3001.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
